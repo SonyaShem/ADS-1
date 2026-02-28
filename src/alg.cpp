@@ -4,8 +4,8 @@
 
 
 bool checkPrime(uint64_t value) {
-  int count = 0;
-  for (int i = 1; i <= value; i++) {
+  uint64_t count = 0;
+  for (uint64_t i = 1; i <= value; i++) {
     if (value % i == 0) {
       count++;
     }
@@ -18,11 +18,11 @@ bool checkPrime(uint64_t value) {
 }
 
 uint64_t nPrime(uint64_t n) {
-  int row = 0;
-  int num = 2;
+  uint64_t row = 0;
+  uint64_t num = 2;
   while (true) {
-    int count = 0;
-    for (int i = 1; i <= num; i++) {
+    uint64_t count = 0;
+    for (uint64_t i = 1; i <= num; i++) {
         if (num % i == 0) {
           count++;
         }
@@ -38,10 +38,10 @@ uint64_t nPrime(uint64_t n) {
 }
 
 uint64_t nextPrime(uint64_t value) {
-  int num = value + 1;
+  uint64_t num = value + 1;
   while (true) {
-    int count = 0;
-    for (int i = 1; i <= num; i++) {
+    uint64_t count = 0;
+    for (uint64_t i = 1; i <= num; i++) {
         if (num % i == 0) {
           count++;
         }
@@ -54,10 +54,10 @@ uint64_t nextPrime(uint64_t value) {
 }
 
 uint64_t sumPrime(uint64_t hbound) {
-  int num = 2;
-  int sum = 0;
+  uint64_t num = 2;
+  uint64_t sum = 0;
   while (true) {
-    int count = 0;
+    uint64_t count = 0;
     for (int i = 1; i <= num; i++) {
         if (num % i == 0) {
           count++;
@@ -74,12 +74,12 @@ uint64_t sumPrime(uint64_t hbound) {
 }
 
 uint64_t twinPrimes(uint64_t lbound, uint64_t hbound) {
-  int prev = -1;
-  int num = lbound;
-  int twins = 0;
+  uint64_t prev = 18 446 744 073 709 551 615;
+  uint64_t num = lbound;
+  uint64_t twins = 0;
   while (true) {
-    int count = 0;
-    for (int i = 1; i <= num; i++) {
+    uint64_t count = 0;
+    for (uint64_t i = 1; i <= num; i++) {
         if (num % i == 0) {
           count++;
         }
