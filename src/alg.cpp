@@ -74,7 +74,7 @@ uint64_t sumPrime(uint64_t hbound) {
 }
 
 uint64_t twinPrimes(uint64_t lbound, uint64_t hbound) {
-  uint64_t prev = 18 446 744 073 709 551 615;
+  uint64_t prev = 18446744073709551615;
   uint64_t num = lbound;
   uint64_t twins = 0;
   while (true) {
