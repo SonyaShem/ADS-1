@@ -32,14 +32,12 @@ uint64_t nPrime(uint64_t n) {
     }
     if (row == n) {
         return num;
-        break;
     }
     num++;
   }
 }
 
 uint64_t nextPrime(uint64_t value) {
-  int row = 0;
   int num = value + 1;
   while (true) {
     int count = 0;
@@ -50,7 +48,6 @@ uint64_t nextPrime(uint64_t value) {
     }
     if (count == 2) {
         return num;
-        break;
     }
     num++;
   }
@@ -71,7 +68,6 @@ uint64_t sumPrime(uint64_t hbound) {
     }
     if (num >= hbound) {
         return sum;
-        break;
     }
     num++;
   }
@@ -96,7 +92,6 @@ uint64_t twinPrimes(uint64_t lbound, uint64_t hbound) {
     }
     if (num >= hbound) {
         return twins;
-        break;
     }
     num++;
   }
