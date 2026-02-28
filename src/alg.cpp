@@ -5,11 +5,15 @@
 
 bool checkPrime(uint64_t value) {
   int count = 0;
-  for(int i = 1; i <= value; i++){
-    if(value % i == 0) { count++; }
+  for (int i = 1; i <= value; i++){
+    if (value % i == 0) { count++; }
   }
-  if(count == 2) { return true; }
-  else { return false; }
+  if (count == 2) {
+    return true;
+  }
+  else {
+    return false;
+  }
 }
 
 uint64_t nPrime(uint64_t n) {
@@ -18,9 +22,13 @@ uint64_t nPrime(uint64_t n) {
   while (true) {
     int count = 0;
     for (int i = 1; i <= num; i++) {
-        if (num % i == 0) { count++; }
+        if (num % i == 0) {
+          count++;
+        }
     }
-    if (count == 2) { row++; }
+    if (count == 2) {
+      row++;
+    }
     if (row == n) {
         return num;
         break;
@@ -35,7 +43,9 @@ uint64_t nextPrime(uint64_t value) {
   while (true) {
     int count = 0;
     for (int i = 1; i <= num; i++) {
-        if (num % i == 0) { count++; }
+        if (num % i == 0) {
+          count++;
+        }
     }
     if (count == 2) {
         return num;
@@ -51,9 +61,13 @@ uint64_t sumPrime(uint64_t hbound) {
   while (true) {
     int count = 0;
     for (int i = 1; i <= num; i++) {
-        if (num % i == 0) { count++; }
+        if (num % i == 0) {
+          count++;
+        }
     }
-    if (count == 2 && num < hbound) { sum += num; }
+    if (count == 2 && num < hbound) {
+      sum += num;
+    }
     if (num >= hbound) {
         return sum;
         break;
@@ -69,10 +83,14 @@ uint64_t twinPrimes(uint64_t lbound, uint64_t hbound) {
   while (true) {
     int count = 0;
     for (int i = 1; i <= num; i++) {
-        if (num % i == 0) { count++; }
+        if (num % i == 0) {
+          count++;
+        }
     }
     if (count == 2 && num < hbound) {
-        if (num - prev == 2) { twins++; }
+        if (num - prev == 2) {
+          twins++;
+        }
         prev = num;
     }
     if (num >= hbound) {
